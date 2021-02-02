@@ -23,6 +23,7 @@ func input() string {
 
 func judge(word, next string) {
 	last := len(word)
+	// 一文字３バイト
 	prelast := len(word) - 3
 	laststr := word[prelast:last]
 
