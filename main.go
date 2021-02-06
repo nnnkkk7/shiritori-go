@@ -10,6 +10,7 @@ import (
 func main() {
 	fmt.Println("start!!!!!!")
 	firstword := "り"
+	fmt.Printf("first word %s", firstword)
 	t := input()
 	nextlast := judge(firstword, t)
 	tt := input()
@@ -19,7 +20,6 @@ func main() {
 	tt3 := input()
 	n3 := judge(n2, tt3)
 	fmt.Println(n3)
-
 }
 
 func input() string {
