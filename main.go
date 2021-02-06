@@ -11,8 +11,7 @@ func main() {
 	fmt.Println("start!!!!!!")
 	firstword := "り"
 	t := input()
-	last := getLastStr(t)
-	nextlast := judge(firstword, last)
+	nextlast := judge(firstword, t)
 	tt := input()
 	n := judge(nextlast, tt)
 	tt2 := input()
@@ -31,14 +30,9 @@ func input() string {
 }
 
 func judge(last, next string) string {
-	// last := len(word)
-	// // 一文字３バイト
-	// prelast := len(word) - 3
-	// // 最後の文字
-	// laststr := word[prelast:last]
-
 	fmt.Println(last)
-	if strings.HasSuffix(next, last) {
+	// nextのはじめの文字がlastかどうかの判定
+	if strings.HasPrefix(next, last) {
 		fmt.Println("ok")
 	} else {
 		fmt.Println("game over")
