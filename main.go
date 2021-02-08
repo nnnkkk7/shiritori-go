@@ -8,6 +8,7 @@ import (
 )
 
 func main() {
+	// 始まりの合図
 	fmt.Println("start!!!!!!")
 	firstword := "り"
 	fmt.Printf("first word %s", firstword)
@@ -23,6 +24,7 @@ func main() {
 }
 
 func input() string {
+　　　　　// 標準入力を受け取る
 	stdin := bufio.NewScanner(os.Stdin)
 	stdin.Scan()
 	text := stdin.Text()
