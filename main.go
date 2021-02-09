@@ -21,7 +21,7 @@ func begin(word string) {
 }
 
 func input() string {
-　　　　　// 標準入力を受け取る
+	// 標準入力を受け取る
 	stdin := bufio.NewScanner(os.Stdin)
 	stdin.Scan()
 	text := stdin.Text()
